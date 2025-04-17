@@ -1,0 +1,66 @@
+---
+const {width, height} = Astro.props;
+const socialLinks = [
+    {
+        title: 'LinkedIn',
+        icon: 'simple-icons:linkedin',
+        href: 'https://www.linkedin.com/in/geoffrey-coutant-7527252a0/',
+
+    },
+    {
+        title: 'CV',
+        icon: 'tabler:file-cv',
+        href: '../docs/CV_Geoffrey_COUTANT.pdf',
+
+    },
+];
+---
+
+<div class="icons__container">
+    {
+        socialLinks.map((data) => (
+                <a
+                        href={data.href}
+                        target="_blank"
+                        rel="nofollow noreferrer noopener"
+                >
+                    <iconify-icon
+                            class=`skill__icon ${data.title}`
+                            icon={data.icon}
+                            width={width}
+                            height={height}
+                    />
+                </a>
+        ))
+    }
+</div>
+
+<style>
+    .icons__container {
+        display: flex;
+        width: 29.6rem;
+        /* padding: 1.3rem 4rem; */
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .skill__icon{
+        color:#dcd8fc;
+    }
+
+    .LinkedIn:hover{
+        color: #0e76a8;
+    }
+    .Instagram:hover{
+        color: #E1306C;
+    }
+    .Twitter:hover{
+        color: #0aa5f6;
+    }
+    .CV:hover{
+        color:#8e64ff;
+    }
+
+
+
+</style>

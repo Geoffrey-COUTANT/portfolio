@@ -1,0 +1,35 @@
+---
+import TerminalIcon from '../../atoms/terminal-icon/TerminalIcon.astro';
+import Terminal from '../terminal/Terminal.astro';
+import './skills-on-terminal.css';
+---
+
+<Terminal nombre="GeoffreyCoutant">
+    <div class="terminal__skills">
+        <h2>Mes Compétences</h2>
+        <div class="terminal__skills__container">
+            <TerminalIcon
+                    src="assets/csharp.svg"
+                    color="#7738ff"
+                    name="Csharp"
+            />
+            <TerminalIcon
+                    src="/assets/ascii-html.svg"
+                    color="#FF4747"
+                    name="Html"
+            />
+            <TerminalIcon
+                    src="/assets/react.svg"
+                    color="#00D1FF"
+                    name="React"
+            />
+            <TerminalIcon src="/assets/javascript.svg" color="#FFFF00" name="Javascript" />
+            <TerminalIcon src="/assets/css.svg" color="#00A3FF" name="CSS" />
+            <TerminalIcon
+                    src="/assets/tailwind.svg"
+                    color="#3F75FF"
+                    name="Tailwind"
+            />
+        </div>
+    </div>
+</Terminal>

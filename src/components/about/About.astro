@@ -1,0 +1,33 @@
+---
+import SocialIcons from '../SocialIcons.astro';
+import Title from '../atoms/Title.astro';
+import "./about.css"
+
+
+---
+
+<section id="about" class="about">
+    <div class="about__container">
+        <img
+                class="about__img"
+                src="../../../public/img/geoffrey-coutant-photo.svg"
+                alt="Photo de profil de Geoffrey Coutant"
+        />
+
+        <div class="about__content">
+            <Title margin="1rem" container="Sur moi" />
+            <p class="about__text">
+                Je suis développeur web, passionné par la création d’interfaces web modernes et
+                fonctionnelles. J’aime transformer des idées en projets concrets, alliant technique et créativité. En
+                dehors du boulot, je suis curieux, j’aime apprendre de nouvelles choses, faire du sport, et
+                parfois coder juste pour le fun. J'aime les animaux de compagnies. Au départ, je voulais devenir
+                vétérinaire, mais après avoir vu mon cousin coder, j’ai commencé à m’y intéresser. Plus je découvrais
+                le développement web, plus j’aimais ça. J’ai donc décidé de me lancer et je ne regrette pas du tout ce
+                choix. Aujourd’hui, je cherche constamment à apprendre, relever de nouveaux défis, et évoluer dans ce
+                domaine en pleine croissance.
+            </p>
+            <SocialIcons width="25" height="25"/>
+        </div>
+    </div>
+
+</section>
