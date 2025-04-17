@@ -8,5 +8,6 @@ pnpm-debug.log*
 .env
 .env.production
 .DS_Store
+.astro
 .idea/
 */**/*.local-note.ipynb

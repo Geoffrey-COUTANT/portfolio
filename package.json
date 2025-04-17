@@ -10,6 +10,7 @@
   "author": "",
   "description": "",
   "dependencies": {
+    "astro": "^5.7.3",
     "react": "^19.1.0"
   }
 }
