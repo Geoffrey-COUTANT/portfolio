@@ -1,16 +1,44 @@
 {
   "name": "portfolio",
+  "type": "module",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "main": "index.astro",
+  "license": "CC-BY-NC-4.0",
+  "devDependencies": {},
+  "author": {
+    "name": "Geoffrey Coutant",
+    "email": "geoffrey22.coutant@outlook.fr",
+    "url": "https://github.com/Geoffrey-COUTANT"
   },
-  "keywords": [],
-  "author": "",
-  "description": "",
+  "description": "Portfolio personnel de Geoffrey Coutant pour présenter mes projets et compétences.",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
   "dependencies": {
-    "astro": "^5.7.3",
-    "react": "^19.1.0"
+    "@astrojs/react": "^3.3.0",
+    "@astrojs/sitemap": "^3.1.4",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.4.3"
+  },
+  "keywords": [
+    "astro",
+    "geoffreycoutant",
+    "frontend",
+    "portfolio",
+    "javascript",
+    "portfolio",
+    "css",
+    "tailwind"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geoffrey-COUTANT/portfolio.git"
   }
 }
