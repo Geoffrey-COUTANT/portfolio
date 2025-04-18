@@ -5,36 +5,47 @@ import './Footer.css';
 ---
 
 <footer>
-    <div class="footer__container">
-        <Logo name="Geoffrey Coutant" />
-        <SocialIcons width="23" height="23" />
+    <div class='flex flex-col gap-2'>
+        <div class='flex flex-wrap gap-28 justify-between w-full items-center'>
+            <div class="footer__container">
+                <Logo name="Geoffrey Coutant" />
+            </div>
+            <aside>
+                <ul class='flex flex-wrap gap-4 justify-center items-center'>
+                    <li>
+                        <a class="footer__link" href="mailto:geoffrey22.coutant@outlook.fr"
+                        ><span
+                        ><SocialIcons width="23" height="23" /></span
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="footer__link" href="mailto:geoffrey22.coutant@outlook.fr"
+                        ><span
+                        ><iconify-icon
+                                icon="fluent:mail-28-regular"
+                                width="27"
+                                height="27"
+                                style="color: #dcd8fc"></iconify-icon></span
+                        ></a>
+                    </li>
+                    <li>
+                        <a class="footer__link"
+                           href="https://github.com/Geoffrey-COUTANT"
+                           target="_blank"
+                           rel="nofollow noreferrer noopener"
+                        ><span
+                        ><iconify-icon
+                                icon="mdi:github"
+                                width="27"
+                                height="27"
+                                style="color: #dcd8fc"></iconify-icon></span
+                        ></a>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+        <div class="footer__license">
+            <h2 class='text-lg'>© 2025 Geoffrey Coutant. Tous droits réservés.<h2>
+        </div>
     </div>
-
-    <aside class="footer__links">
-        <ul>
-            <li>
-                <a class="footer__link" href="mailto:geoffrey22.coutant@outlook.fr"
-                ><span
-                ><iconify-icon
-                        icon="fluent:mail-28-regular"
-                        width="27"
-                        height="27"
-                        style="color: #dcd8fc"></iconify-icon></span
-                >geoffrey22.coutant@outlook.fr</a>
-            </li>
-            <li>
-                <a class="footer__link"
-                   href="https://github.com/Geoffrey-COUTANT"
-                   target="_blank"
-                   rel="nofollow noreferrer noopener"
-                ><span
-                ><iconify-icon
-                        icon="mdi:github"
-                        width="27"
-                        height="27"
-                        style="color: #dcd8fc"></iconify-icon></span
-                >@Geoffrey Coutant</a>
-            </li>
-        </ul>
-    </aside>
 </footer>
