@@ -4,7 +4,10 @@
   "version": "1.0.0",
   "main": "index.astro",
   "license": "CC-BY-NC-4.0",
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "gh-pages": "^6.3.0"
+  },
   "author": {
     "name": "Geoffrey Coutant",
     "email": "geoffrey22.coutant@outlook.fr",
@@ -16,12 +19,14 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@astrojs/react": "^3.3.0",
     "@astrojs/sitemap": "^3.1.4",
     "@astrojs/tailwind": "^5.1.0",
+    "aos": "^2.3.4",
     "astro": "^4.6.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
