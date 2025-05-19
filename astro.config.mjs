@@ -6,6 +6,8 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
+    site: 'https://geoffrey-coutant.github.io/portfolio/',
+    base: '/',
     devToolbar: {
         enabled: false
     },
