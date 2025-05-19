@@ -2,10 +2,12 @@ footer {
     width: 100%;
     background: rgb(19, 19, 19);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     min-height: 20dvh;
     color: var(--primary-100);
     align-items: center;
+    padding: 1rem 4rem;
+    flex-wrap: wrap;
     h3{
         font-size: var(--text-title);
     }
@@ -16,10 +18,13 @@ footer {
     align-items: flex-start;
     gap: 2rem;
 }
-.footer__license {
-    padding-top: 2em;
-    text-align: center;
-    text-decoration: underline;
-    text-underline-offset: 0.5em;
-    font-size: 0.85rem;
+
+
+.footer__link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: var(--text-large);
+
 }
