@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import Boton from "./atoms/Boton.astro";
 import FormattedDate from "./FormattedDate.astro";
 import CardBlog from "./CardBlog.astro";
+import "../styles/global.css"
 const posts = (await getCollection('blog')).sort(
     (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
