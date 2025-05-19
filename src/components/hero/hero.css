@@ -43,7 +43,10 @@
     font-size: 3em;
 }
 
-.hero .hero__text {
+.hero__text {
+    font-size: var(--text-x-large);
+}
+.hero {
     font-size: var(--text-xx-large);
 }
 
