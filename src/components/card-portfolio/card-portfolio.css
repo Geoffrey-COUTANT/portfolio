@@ -81,6 +81,7 @@
     white-space: wrap;
     height: 90px;
     max-height: 90px;
+    scroll-behavior: smooth; /* ✅ Ajoute ça */
 }
 
 .card__portfolio .description p::-webkit-scrollbar {

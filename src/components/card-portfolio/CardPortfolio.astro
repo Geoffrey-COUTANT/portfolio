@@ -38,3 +38,21 @@ const {
         </div>
     </div>
 </div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.card__portfolio .description p').forEach((el) => {
+            el.addEventListener('wheel', (e) => {
+                // On vérifie que e est bien un WheelEvent
+                if (e instanceof WheelEvent) {
+                    e.preventDefault();
+                    el.scrollTop += e.deltaY * 0.5;
+                }
+            }, { passive: false });
+        });
+    });
+</script>
+
+
+
+
+
