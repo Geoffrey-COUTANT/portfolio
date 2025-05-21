@@ -47,7 +47,7 @@ export const portfolioData = [
         anim: 'fade-left',
     },
     {
-        imgSrc: 'https://i.imgur.com/an3B19Z.jpeg',
+        imgSrc: 'https://i.imgur.com/an3B19Z.png',
         title: 'ClimatRPG',
         skills: ['Python'],
         description:
