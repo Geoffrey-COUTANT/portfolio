@@ -1,10 +1,14 @@
 ---
-import "../../styles/global.css"
+import "../../styles/global.css";
 import '../hero/hero.css';
-const { href, texto } = Astro.props;
+const { href, texto, clickable = true } = Astro.props;
 ---
 
+{clickable && href ? (
 <a class="primary button" href={href}>{texto}</a>
+    ) : (
+<span class="primary button disabled">{texto}</span>
+    )}
 
 <style>
     .button {
@@ -18,6 +22,8 @@ const { href, texto } = Astro.props;
         transition: 0.35s opacity;
         max-width: max-content;
         color: var(--primary-90);
+        cursor: pointer;
+        user-select: none;
     }
     .button:hover {
         opacity: 0.7;
@@ -25,5 +31,14 @@ const { href, texto } = Astro.props;
     .button:active {
         opacity: 0.5;
     }
-</style>
 
+    /* Styles pour quand le bouton n'est pas cliquable */
+    .button.disabled {
+        opacity: 0.5;
+        pointer-events: none; /* désactive tout clic */
+        cursor: default;
+    }
+    .button.disabled:hover {
+        opacity: 0.5; /* Pas d'effet hover si désactivé */
+    }
+</style>
