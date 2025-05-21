@@ -47,11 +47,13 @@ export const portfolioData = [
         anim: 'fade-left',
     },
     {
-        imgSrc: 'https://i.imgur.com/an3B19Z.png',
+        imgSrc: 'https://i.imgur.com/Ym9C59n.png',
         title: 'ClimatRPG',
         skills: ['Python'],
         description:
-            'EN COURS D’AJOUT.',
+            'ClimatRPG est un jeu 2D développé en Python par une équipe de 3 personnes. Il s\'agit d\'un jeu de combat en 1 contre 1, où le joueur peut incarner l’un des trois ' +
+            'types de personnages : mage (plus de mana), guerrier (plus de défense) ou assassin (plus de dégâts).\n' +
+            'Les combats se déclenchent en s\'approchant de l\'adversaire sur une carte exploratoire où il est aussi possible de trouver des coffres et des objets.',
         demoURL: '',
         repoURL: '',
         anim: 'fade-right',
